@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="page" id="halaman">
+        <h1>Input Data</h1>
+        <p>Data A</p>
+        <input name="dataA" id="nilai1" type="text">
+
+        <p>Data B</p>
+        <input name="dataB" id="nilai2" type="text">
+
+        <P>Data A + Data B = </P>
+        <input type="button" onclick="jumlah()" value="Jumlah">
+        <P id ="penjumlahan"></P>
+        
+    </div>
+    
+<script>
+    alert("Selamat Datang")
+    function jumlah(){
+        var a = document.getElementById("nilai1").value;
+        var b = document.getElementById("nilai2").value;
+        var jumlahan = parseFloat(a)+parseFloat(b);
+        
+
+        document.getElementById("penjumlahan").innerHTML = jumlahan;
+        document.getElementById("halaman").style.backgroundColor = "#6BFF33";
+        
+    }
+    
+</script>
+
+</body>
+</html>
